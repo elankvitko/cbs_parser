@@ -1,0 +1,31 @@
+h1#home-title {
+  text-align: center;
+}
+
+div#table-holder {
+  width: 33.33333%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+h3.sport-title {
+  text-align: center;
+}
+
+div.table-changer {
+  text-align: center;
+}
+
+select#sport-changer {
+  font-size: 26px;
+  margin-top: 50px;
+  width: 200px;
+}
+
+#sport-view-btn {
+  font-size: 30px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

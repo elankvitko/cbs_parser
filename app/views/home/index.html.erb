@@ -1,0 +1,22 @@
+<div class="col-md-12 col-sm-12">
+  <h1 id="home-title">Fantasy Viewer</h1>
+  <h3 class="sport-title"><%= @sport.sport.capitalize %></h3>
+</div>
+
+<div class="col-md-12">
+  <div id="table-holder" class="hide">
+    <%= render 'layouts/sports_table' %>
+  </div>
+</div>
+
+<div class="table-changer">
+  <select id="sport-changer" class="center" name="sport">
+    <option value="" disabled selected>Select Sport</option>
+    <% @options.each do | option | %>
+      <option value="<%= option %>"><%= option.capitalize %></option>
+    <% end %>
+  </select>
+  <br>
+  <br>
+  <%= link_to 'Click To View All Sport Data - JSON', sport_path( @sport, format: 'json' ), id: 'sport-view-btn' %>
+</div>

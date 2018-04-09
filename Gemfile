@@ -14,6 +14,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pry-rails'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+gem 'jquery-datatables-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

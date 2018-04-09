@@ -1,0 +1,18 @@
+<table id="sports-table" class="tablesorter">
+  <thead>
+    <tr>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @players.each do | player | %>
+    <tr>
+      <td><%= player.lastname %></td>
+      <td><%= player.firstname %></td>
+      <td><%= link_to 'View JSON', player_path( player, format: 'json' ) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
