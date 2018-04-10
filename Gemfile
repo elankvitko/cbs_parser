@@ -17,6 +17,7 @@ gem 'pry-rails'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'jquery-datatables-rails'
+gem 'oj'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
